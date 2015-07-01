@@ -1,7 +1,56 @@
-<h1>Display your Pirate here</h1>
+<h1>This be a pirate:</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Weight</th>
+        <th>Height</th>
+      </tr>
+    </thead>
 
+    <tbody>
+      <tr>
+        <th> <%= @pirate[:name] %> </th>
+        <th> <%= @pirate[:weight] %> </th>
+        <th> <%= @pirate[:height] %> </th>
+      </tr>
+    <tbody>
+  </table>
 
-<h2>Display your first ship here</h2>
+<h2>Thar Be Me Ship:</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Booty</th>
+      </tr>
+    </thead>
 
+    <tbody>
+      <tr>
+        <th> <%= @pirate[:ship]["0"][:name] %> </th>
+        <th> <%= @pirate[:ship]["0"][:type] %> </th>
+        <th> <%= @pirate[:ship]["0"][:booty] %> </th>
+      </tr>
+    </tbody>
+  </table>
 
-<h2>Display your second ship here</h2>
+<h2>Thar Be Another Ship o' Mine:</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Booty</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th> <%= @pirate[:ship]["1"][:name] %> </th>
+        <th> <%= @pirate[:ship]["1"][:type] %> </th>
+        <th> <%= @pirate[:ship]["1"][:booty] %> </th>
+      </tr>
+    </tbody>
+  </table>
